@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="306d72c6-e672-48e1-9688-f717f15702dd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/editorial_board/checkup/migrations/__init__.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/checkup/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/checkup/migrations/0002_auto__add_field_question_order.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/__init__.py" afterPath="$PROJECT_DIR$/editorial_board/checkup/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/admin.py" afterPath="$PROJECT_DIR$/editorial_board/checkup/admin.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/dashboard.py" afterPath="$PROJECT_DIR$/editorial_board/checkup/dashboard.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/forms.py" afterPath="$PROJECT_DIR$/editorial_board/checkup/forms.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/migrations/__init__.py" afterPath="$PROJECT_DIR$/editorial_board/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/models.py" afterPath="$PROJECT_DIR$/editorial_board/checkup/models.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/scripts/checkup_fake_data.py" afterPath="$PROJECT_DIR$/editorial_board/checkup/scripts/checkup_fake_data.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/scripts/load_short_urls.py" afterPath="$PROJECT_DIR$/editorial_board/checkup/scripts/load_short_urls.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/scripts/respondent_import.py" afterPath="$PROJECT_DIR$/editorial_board/checkup/scripts/respondent_import.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/css/animate+animo.css" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/css/animate+animo.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/css/bootstrap.css" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/css/bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/css/casesmq.css" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/css/casesmq.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/css/checkup.css" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/css/checkup.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/css/isotope.css" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/css/isotope.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/css/overviewmq.css" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/css/overviewmq.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/approve.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/approve.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/comment.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/comment.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/commented.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/commented.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/contact.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/contact.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/disapprove.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/disapprove.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/dollar.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/dollar.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/email.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/email.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/greenarrow.png" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/greenarrow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/greyarrow.png" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/greyarrow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/link.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/link.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/no-comment.png" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/no-comment.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/no-response.png" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/no-response.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/no.png" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/no.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/office.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/office.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/phone.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/phone.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/redarrow.png" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/redarrow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/shield-iphone.png" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/shield-iphone.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/shield.png" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/shield.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/sources.txt" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/sources.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/twitter.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/twitter.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/unknown.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/unknown.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/yes.png" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/yes.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/animo-shim.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/animo-shim.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/animo.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/animo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/checkup.fancyload.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/checkup.fancyload.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/checkup.profile.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/checkup.profile.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/checkup.survey.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/checkup.survey.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/history.adapter.jquery.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/history.adapter.jquery.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/is.mobile.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/is.mobile.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/jquery.checkup.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/jquery.checkup.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/jquery.history.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/jquery.history.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/jquery.isotope.min.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/jquery.isotope.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/jquery.localscroll-1.2.7-min.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/jquery.localscroll-1.2.7-min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/jquery.scrollTo-1.4.3.1-min.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/jquery.scrollTo-1.4.3.1-min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/jquery.touchSwipe.min.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/jquery.touchSwipe.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/modernizr.custom.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/modernizr.custom.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/readmore.min.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/readmore.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/respond.min.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/respond.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/underscore-min.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/underscore-min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/underscore-min.map" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/underscore-min.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/waypoints.min.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/waypoints.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/back-button.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/back-button.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/base.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/base.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/byline.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/byline.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/comments.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/comments.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/mugshot.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/mugshot.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/next-arrow-profile.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/next-arrow-profile.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/next-arrow.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/next-arrow.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/prev-arrow-profile.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/prev-arrow-profile.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/prev-arrow.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/prev-arrow.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/profile.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/profile.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/scrap.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/scrap.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/survey-complete-text.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/survey-complete-text.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/survey-incomplete-text.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/survey-incomplete-text.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/survey.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/survey.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/surveyform.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/surveyform.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/swipes.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/swipes.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/thanks.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/thanks.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/tweetme.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/tweetme.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/tests.py" afterPath="$PROJECT_DIR$/editorial_board/checkup/tests.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/urls.py" afterPath="$PROJECT_DIR$/editorial_board/checkup/urls.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/views.py" afterPath="$PROJECT_DIR$/editorial_board/checkup/views.py" />
+    </list>
+    <ignored path="newstools-checkup.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="newstools-checkup" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editorial_board/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#22#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editorial_board/editorial_board/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2261">
+              <caret line="134" column="29" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
+              <folding>
+                <element signature="e#316#325#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editorial_board/checkup/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editorial_board/checkup/dashboard.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editorial_board/checkup/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="26" column="38" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editorial_board/checkup/templates/checkup/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="survey.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editorial_board/checkup/templates/checkup/survey.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1459969937000" expanded="true" signature="2404:2902" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="surveyform.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editorial_board/checkup/templates/checkup/surveyform.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/editorial_board/checkup/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="24" column="36" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editorial_board/checkup/migrations/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/checkup/models.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/editorialPrj/editorialPrj/local_settings.py" />
+        <option value="$PROJECT_DIR$/editorialPrj/editorialPrj/settings.py" />
+        <option value="$PROJECT_DIR$/editorial_board/editorial_board/auth.py" />
+        <option value="$PROJECT_DIR$/editorial_board/editorial_board/settings.py" />
+        <option value="$PROJECT_DIR$/editorial_board/checkup/models.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="1119" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newstools-checkup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newstools-checkup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newstools-checkup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newstools-checkup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newstools-checkup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="editorial_board" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newstools-checkup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newstools-checkup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="editorial_board" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="checkup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v5.5.0/bin/node" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/editorial_board" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/editorial_board" />
+      <recent name="$PROJECT_DIR$/editorialPrj/editorialPrj" />
+      <recent name="$PROJECT_DIR$/editorialPrj" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="newstools-checkup" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="newstools-checkup" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="newstools-checkup" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="newstools-checkup" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="newstools-checkup" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="newstools-checkup" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="newstools-checkup" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="newstools-checkup" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="newstools-checkup" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="newstools-checkup" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="306d72c6-e672-48e1-9688-f717f15702dd" name="Default" comment="" />
+      <created>1459968328685</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1459968328685</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1920" height="1119" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.115548454" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5021299" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15257531" sideWeight="0.4978701" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/editorial_board/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/editorial_board/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2261">
+          <caret line="134" column="29" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
+          <folding>
+            <element signature="e#316#325#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/dashboard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="26" column="38" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/templates/checkup/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/templates/checkup/survey.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1459969937000" expanded="true" signature="2404:2902" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/templates/checkup/surveyform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorialPrj/editorialPrj/settings.py" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorialPrj/manage.py" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorialPrj/checkup/admin.py" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/django/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorialPrj/checkup/scripts/checkup_fake_data.py" />
+    <entry file="file://$PROJECT_DIR$/editorialPrj/checkup/scripts/load_short_urls.py" />
+    <entry file="file://$PROJECT_DIR$/editorialPrj/checkup/scripts/respondent_import.py" />
+    <entry file="file://$PROJECT_DIR$/editorialPrj/checkup/migrations/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/editorialPrj/checkup/migrations/0001_initial.py" />
+    <entry file="file://$PROJECT_DIR$/editorialPrj/checkup/migrations/0002_auto__add_field_question_order.py" />
+    <entry file="file://$PROJECT_DIR$/MANIFEST.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorialPrj/manage.py" />
+    <entry file="file://$PROJECT_DIR$/editorialPrj/checkup/models.py" />
+    <entry file="file://$PROJECT_DIR$/editorialPrj/editorialPrj/local_settings.py" />
+    <entry file="file://$PROJECT_DIR$/editorialPrj/editorialPrj/settings.py" />
+    <entry file="file://$USER_HOME$/.virtualenvs/checkup/lib/python2.7/site-packages/pip/req/req_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/editorial_board/auth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/django-dbtemplates-master/setup.py" />
+    <entry file="file://$PROJECT_DIR$/local_settings.example">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/migrations/0002_auto__add_field_question_order.py" />
+    <entry file="file://$PROJECT_DIR$/editorial_board/editorial/migrations/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/editorial_board/editorial_board/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2261">
+          <caret line="134" column="29" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
+          <folding>
+            <element signature="e#316#325#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/dashboard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="26" column="38" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/templates/checkup/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/templates/checkup/survey.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1459969937000" expanded="true" signature="2404:2902" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/templates/checkup/surveyform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
