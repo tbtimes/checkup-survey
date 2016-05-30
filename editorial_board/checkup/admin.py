@@ -23,7 +23,7 @@ class QuestionAdmin(admin.ModelAdmin):
 	list_display = ('question', 'explanation')
 
 class AssignmentAdmin(admin.ModelAdmin):
-	change_list_template = 'admin/change_list_filter_sidebar.html'
+	# change_list_template = 'admin/change_list_filter_sidebar.html'
 	change_list_filter_template = 'admin/filter_listing.html'
 	list_display = ('respondent', 'respondent_link', 'phone', 'email', 'contacted', 'visits',
 		'receipt_confirmed', 'survey_complete', 'confirmation_sent', 'reporter', 'form_url',)

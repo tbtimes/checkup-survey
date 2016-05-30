@@ -28,7 +28,7 @@ base_template = settings.TEMPLATE_BASE if hasattr(settings, 'TEMPLATE_BASE') els
 
 #Limit requests to this view to 1,200 per hour from one IP address
 #for both GET and POST. If ratelimited, throw a 403.
-@ratelimit(rate='1200/h', method=None, block=True)
+@ratelimit(rate='1200/h', key='ip', block=True)
 def surveyform(request, assignment_id):
     assignment = get_object_or_404(Assignment, form_slug=assignment_id)
     
@@ -129,113 +129,116 @@ def thanks(request, assignment_id):
         }
     return render(request, 'checkup/thanks.html', context)
 
-def survey_feed(request, slug):
-    survey = get_object_or_404(Survey, home_slug=slug)
-    survey_values = ['id','display_chatter','name']
-    data = Survey.objects.filter(pk=survey.id).values(*survey_values)[0]
-    
-    # Get first assignment to appear after questions
-    data['first_assignment'] = survey.first_assignment().get_absolute_url()
 
-    assignments = OrderedDict()
-    for assignment in survey.assignments.all():
-        new_assign = {}
 
-        new_assign_values = ['display_chatter', 'id', 'survey_complete', 
-            'respondent_id', 'respondent__title__short', 'respondent__party',
-            'respondent__headshot', 'respondent__last_name'];
 
-        new_assign = Assignment.objects.filter(pk=assignment.id).values(*new_assign_values)[0]
-        new_assign['url'] = assignment.get_absolute_url();
-        new_assign['comment_left'] = True if (hasattr(assignment, 'comment') and assignment.comment.comment != '') else False
-        
-        qas = {}
-        for q in assignment.questions.questions.all():
-            if Answer.objects.filter(assignment=assignment, question__question=q).exists():
-                a = Answer.objects.get(assignment=assignment, question__question=q)
-                qas['%s' % q.question] = a.answer.choice
-            else:
-                qas['%s' % q.question] = NO_RESPONSE
-        
-        new_assign['qas'] = qas
+# def survey_feed(request, slug):
+#     survey = get_object_or_404(Survey, home_slug=slug)
+#     survey_values = ['id','display_chatter','name']
+#     data = Survey.objects.filter(pk=survey.id).values(*survey_values)[0]
     
-        assignments['%s-%s' % (str(assignment.respondent.title.order).zfill(3), str(assignment.id).zfill(3))] = new_assign
-    
-    data['assignments'] = assignments
-    data = json.dumps(data, sort_keys=False, indent=4)
-    return HttpResponse(data, mimetype='application/json')
-    
-def overview_feed(request, slug):
-    '''
-    Overview feed contains:
-    Survey info: id, display_chatter, name, feed_updated, number of respondents and number who completed
-    Question info: id, question, number of respondents who chose each answer and who did not respond
-        for each question.
-    '''
-    survey = get_object_or_404(Survey, home_slug=slug)
-    survey_values = ['id','display_chatter','name']
-    data = Survey.objects.filter(pk=survey.id).values(*survey_values)[0]
-    data['survey_respondents'] = Assignment.objects.filter(survey=survey).count()
-    data['surveys_complete'] = Assignment.objects.filter(survey=survey, survey_complete=True).count()
-    
-    questions = Question.objects.filter(questiongroup__in=QuestionGroup.objects.filter(assignment__survey=survey).distinct()).distinct()
-    
-    questions_dict = OrderedDict()
-    
-    data['bin_map'] = { NO_RESPONSE: 'no-response' }
-    
-    for q in questions:
-        new_q_values = ['id', 'question', 'explanation', 'directed_to', 'visualize']
-        new_q = Question.objects.filter(pk=q.id).values(*new_q_values)[0]
-        
-        new_q['asked'] = Assignment.objects.filter(survey=survey, questions__questiongrouporder__question=q).count()
-        new_q['answered'] = Answer.objects.filter(assignment__survey=survey, question__question=q).count()
-        new_q['no_answer'] = new_q['asked'] - new_q['answered']
-        new_q['answers'] = {}
-        new_q['bins'] = OrderedDict()
-        new_q['order'] = q.order
-        
-        for a in q.choices.all():
-            new_q['answers']['%s' % a.choice] = Answer.objects.filter(assignment__survey=survey, question__question=q, answer=a).count()
-            new_q['bins'][a.display.slug] = {'label': a.display.display}
-            data['bin_map'][a.choice] = a.display.slug
-        
-        questions_dict['%s' % str(q.id)] = new_q
-        
-    data['questions'] = questions_dict
-    
-    data['feed_updated'] = str(datetime.datetime.now())
-    
-    data = json.dumps(data, sort_keys=False, indent=4)
-    return HttpResponse(data, mimetype='application/json')
+#     # Get first assignment to appear after questions
+#     data['first_assignment'] = survey.first_assignment().get_absolute_url()
 
-class BaseView(BuildableDetailView):
-    def get_context_data(self, *args, **kwargs):
-        context = super(BaseView, self).get_context_data(*args, **kwargs)
-        context['base_template'] = base_template
-        return context
+#     assignments = OrderedDict()
+#     for assignment in survey.assignments.all():
+#         new_assign = {}
 
-class SurveyDetail(BaseView):
-    queryset = Survey.objects.all()
-    slug_field = 'home_slug'
-    context_object_name = 'survey'
-    template_name = 'checkup/survey.html'
+#         new_assign_values = ['display_chatter', 'id', 'survey_complete', 
+#             'respondent_id', 'respondent__title__short', 'respondent__party',
+#             'respondent__headshot', 'respondent__last_name'];
 
-class AssignmentDetail(BaseView):
-    queryset = Assignment.objects.all()
-    slug_field = 'display_slug'
-    context_object_name = 'assign'
-    template_name = 'checkup/profile.html'
-    
-    def get_context_data(self, *args, **kwargs):
-        context = super(AssignmentDetail, self).get_context_data(*args, **kwargs)
-        try:
-            job_desc = "checkup/job-descs/%s.html" % slugify(context['assign'].respondent.title.short)
-            template.loader.get_template(job_desc)
-        except template.TemplateDoesNotExist:
-            job_desc = ""
+#         new_assign = Assignment.objects.filter(pk=assignment.id).values(*new_assign_values)[0]
+#         new_assign['url'] = assignment.get_absolute_url();
+#         new_assign['comment_left'] = True if (hasattr(assignment, 'comment') and assignment.comment.comment != '') else False
         
-        context['job_desc'] = job_desc
-        context['has_comments'] = True
-        context['assignment_detail'] = True
-        return context
+#         qas = {}
+#         for q in assignment.questions.questions.all():
+#             if Answer.objects.filter(assignment=assignment, question__question=q).exists():
+#                 a = Answer.objects.get(assignment=assignment, question__question=q)
+#                 qas['%s' % q.question] = a.answer.choice
+#             else:
+#                 qas['%s' % q.question] = NO_RESPONSE
+        
+#         new_assign['qas'] = qas
+    
+#         assignments['%s-%s' % (str(assignment.respondent.title.order).zfill(3), str(assignment.id).zfill(3))] = new_assign
+    
+#     data['assignments'] = assignments
+#     data = json.dumps(data, sort_keys=False, indent=4)
+#     return HttpResponse(data, mimetype='application/json')
+    
+# def overview_feed(request, slug):
+#     '''
+#     Overview feed contains:
+#     Survey info: id, display_chatter, name, feed_updated, number of respondents and number who completed
+#     Question info: id, question, number of respondents who chose each answer and who did not respond
+#         for each question.
+#     '''
+#     survey = get_object_or_404(Survey, home_slug=slug)
+#     survey_values = ['id','display_chatter','name']
+#     data = Survey.objects.filter(pk=survey.id).values(*survey_values)[0]
+#     data['survey_respondents'] = Assignment.objects.filter(survey=survey).count()
+#     data['surveys_complete'] = Assignment.objects.filter(survey=survey, survey_complete=True).count()
+    
+#     questions = Question.objects.filter(questiongroup__in=QuestionGroup.objects.filter(assignment__survey=survey).distinct()).distinct()
+    
+#     questions_dict = OrderedDict()
+    
+#     data['bin_map'] = { NO_RESPONSE: 'no-response' }
+    
+#     for q in questions:
+#         new_q_values = ['id', 'question', 'explanation', 'directed_to', 'visualize']
+#         new_q = Question.objects.filter(pk=q.id).values(*new_q_values)[0]
+        
+#         new_q['asked'] = Assignment.objects.filter(survey=survey, questions__questiongrouporder__question=q).count()
+#         new_q['answered'] = Answer.objects.filter(assignment__survey=survey, question__question=q).count()
+#         new_q['no_answer'] = new_q['asked'] - new_q['answered']
+#         new_q['answers'] = {}
+#         new_q['bins'] = OrderedDict()
+#         new_q['order'] = q.order
+        
+#         for a in q.choices.all():
+#             new_q['answers']['%s' % a.choice] = Answer.objects.filter(assignment__survey=survey, question__question=q, answer=a).count()
+#             new_q['bins'][a.display.slug] = {'label': a.display.display}
+#             data['bin_map'][a.choice] = a.display.slug
+        
+#         questions_dict['%s' % str(q.id)] = new_q
+        
+#     data['questions'] = questions_dict
+    
+#     data['feed_updated'] = str(datetime.datetime.now())
+    
+#     data = json.dumps(data, sort_keys=False, indent=4)
+#     return HttpResponse(data, mimetype='application/json')
+
+# class BaseView(BuildableDetailView):
+#     def get_context_data(self, *args, **kwargs):
+#         context = super(BaseView, self).get_context_data(*args, **kwargs)
+#         context['base_template'] = base_template
+#         return context
+
+# class SurveyDetail(BaseView):
+#     queryset = Survey.objects.all()
+#     slug_field = 'home_slug'
+#     context_object_name = 'survey'
+#     template_name = 'checkup/survey.html'
+
+# class AssignmentDetail(BaseView):
+#     queryset = Assignment.objects.all()
+#     slug_field = 'display_slug'
+#     context_object_name = 'assign'
+#     template_name = 'checkup/profile.html'
+    
+#     def get_context_data(self, *args, **kwargs):
+#         context = super(AssignmentDetail, self).get_context_data(*args, **kwargs)
+#         try:
+#             job_desc = "checkup/job-descs/%s.html" % slugify(context['assign'].respondent.title.short)
+#             template.loader.get_template(job_desc)
+#         except template.TemplateDoesNotExist:
+#             job_desc = ""
+        
+#         context['job_desc'] = job_desc
+#         context['has_comments'] = True
+#         context['assignment_detail'] = True
+#         return context

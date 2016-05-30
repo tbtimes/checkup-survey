@@ -180,7 +180,7 @@ class Assignment(models.Model):
     survey = models.ForeignKey('Survey', related_name='assignments')
     respondent = models.ForeignKey('Respondent', related_name='assignments')
     reporter = models.ForeignKey('Reporter', help_text='Reporter assigned to contact respondent for this survey.',
-                                 blank=True)
+                                 blank=True, null=True)
     questions = models.ForeignKey('QuestionGroup')
     form_chatter = models.TextField(
         help_text='Optional text specific to this respondent that will appear before the form questions.', blank=True)
