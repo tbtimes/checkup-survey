@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.conf import settings
 from checkup import views
 
-urlpatterns = patterns('',
+urlpatterns = [
     # Survey-side
     url(r'^forms/(?P<assignment_id>\d+-\w+)/$', views.surveyform, name='surveyform'),
     url(r'^thanks/(?P<assignment_id>\d+-\w+)/$', views.thanks, name='thanks'),
@@ -21,4 +21,4 @@ urlpatterns = patterns('',
     #url(r'^(?P<slug>[\w-]+)/overview_feed.json$', 
     #    login_required(views.overview_feed),
     #    name='overview_feed'),
-)
+]
