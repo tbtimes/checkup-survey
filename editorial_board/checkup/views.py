@@ -51,15 +51,15 @@ def surveyform(request, assignment_id):
     
     form_request.save()
 
-    complete_check = (list(assignment.questions.questions.all().order_by('id').values_list('id', flat=True))
-        == list(assignment.answers.all().order_by('question__question__id').values_list('question__question__id', flat=True))
-        and Comment.objects.filter(assignment=assignment).exists())
+    # complete_check = (list(assignment.questions.questions.all().order_by('id').values_list('id', flat=True))
+    #     == list(assignment.answers.all().order_by('question__question__id').values_list('question__question__id', flat=True))
+    #     and Comment.objects.filter(assignment=assignment).exists())
 
-    if complete_check:
+    if assignment.survey_complete:
         return HttpResponseRedirect('/checkup/thanks/' + assignment.form_slug + '/')
-    else:
-        Answer.objects.filter(assignment=assignment).delete()
-        Comment.objects.filter(assignment=assignment).delete()
+    # else:
+    #     Answer.objects.filter(assignment=assignment).delete()
+    #     Comment.objects.filter(assignment=assignment).delete()
     
     if request.method == 'POST':
         form = SurveyForm(request.POST, assignment=assignment)
@@ -75,39 +75,46 @@ def surveyform(request, assignment_id):
                     group_order = QuestionGroupOrder.objects.get(
                         question=question, group=group)
                     answer = Answer.objects.get_or_create(assignment=assignment, 
-                        question=group_order, 
-                        answer=Choice.objects.get(pk=int(value)))
+                            question=group_order)[0]
+                    if value and not key.endswith('freetext'):
+                        print(value)
+                        answer.answer = Choice.objects.get(pk=int(value))
+                    else:
+                        answer.freetext = value
+                    answer.save()
                 elif 'comment' in key:
                     comment = Comment.objects.get_or_create(assignment=assignment,
                         comment=value)
 
-            complete_check = (list(assignment.questions.questions.all().order_by('id').values_list('id', flat=True))
-                == list(assignment.answers.all().order_by('question__question__id').values_list('question__question__id', flat=True))
-                and Comment.objects.filter(assignment=assignment).exists())
-
-            if complete_check:
-                assignment.survey_complete = True
-                assignment.save()
+            # complete_check = (list(assignment.questions.questions.all().order_by('id').values_list('id', flat=True))
+            #     == list(assignment.answers.all().order_by('question__question__id').values_list('question__question__id', flat=True))
+            #     and Comment.objects.filter(assignment=assignment).exists())
 
             email_message = assignment.respondent.first_name + ' ' + assignment.respondent.last_name
             email_message += ' responded to the survey: ' + assignment.survey.name + '\n\n'
             email_message += 'Here are the respondent\'s answer(s): \n'
             for answer in assignment.answers.all():
                 email_message += answer.question.question.question + '\n'
-                email_message += answer.answer.choice + '\n'
+                email_message += answer.answer.choice if answer.answer else "" + '\n'
+                email_message += answer.freetext if answer.answer else "" + '\n'
             email_message += '\n'
-            email_message += 'Here is the respondent\'s comment (if any): \n'
-            email_message += assignment.comment.comment + '\n'
+            # email_message += 'Here is the respondent\'s comment (if any): \n'
+            # email_message += assignment.comment.comment + '\n'
+            print(email_message)
 
-            try:
-                send_mail('CheckUp survey form submitted!', 
-                            email_message, 
-                            settings.DEFAULT_FROM_EMAIL,
-                            [assignment.reporter.user.email], 
-                            fail_silently=True)
-            except AttributeError:
-                #If they didn't set up their server.
-                pass
+            # try:
+            #     send_mail('CheckUp survey form submitted!', 
+            #                 email_message, 
+            #                 settings.DEFAULT_FROM_EMAIL,
+            #                 [assignment.reporter.user.email], 
+            #                 fail_silently=True)
+            # except AttributeError:
+            #     #If they didn't set up their server.
+            #     pass
+
+            print('survey completed')
+            assignment.survey_complete = True
+            assignment.save()
 
             return HttpResponseRedirect('/checkup/thanks/' + assignment.form_slug + '/')
     else:

@@ -15,7 +15,6 @@ django-storages==1.4
 gunicorn==19.4.5
 jdcal==1.2
 openpyxl==2.2.0b1
-psycopg2==2.6.1
 python-dateutil==2.2
 PyYAML==3.11
 six==1.10.0

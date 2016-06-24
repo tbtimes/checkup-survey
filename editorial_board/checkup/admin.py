@@ -3,7 +3,7 @@ from django.contrib.sites.models import Site
 from django.core.urlresolvers import reverse
 
 from checkup.models import Reporter, Survey, Group, Title, Respondent
-from checkup.models import Question, Choice, ChoiceDisplay, QuestionGroup, QuestionGroupOrder
+from checkup.models import Question, Choice, QuestionGroup, QuestionGroupOrder
 from checkup.models import Assignment, Answer, Contribution, Comment, FormRequest
 from checkup.models import ContributionType
 
@@ -128,7 +128,6 @@ admin.site.register(Group)
 admin.site.register(FormRequest)
 admin.site.register(Title)
 admin.site.register(Choice)
-admin.site.register(ChoiceDisplay)
 admin.site.register(Answer)
 admin.site.register(Comment)
 admin.site.register(ContributionType)

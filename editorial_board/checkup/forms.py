@@ -11,17 +11,29 @@ class SurveyForm(forms.Form):
 		questions = assignment.questions.questions.all().order_by('questiongrouporder__order')
 		
 		for question in questions:
-			choices = []
-			for choice in question.choices.all():
-				choices.append((choice.id, choice.choice))
+			if question.choices.count():
+				choices = []
+				for choice in question.choices.all():
+					choices.append((choice.id, choice.choice))
 
-			self.fields['question-%s' % question.id] = forms.ChoiceField(
-				widget=forms.RadioSelect(), 
-				choices=choices, label=question.question,
-				help_text=question.explanation)
+				self.fields['question-%s' % question.id] = forms.ChoiceField(
+					widget=forms.RadioSelect(), 
+					required=False,
+					choices=choices, label=question.question,
+					help_text=question.explanation)
+				
+				self.fields['question-%s' % question.id].question_id = question.id
+
+			if question.freetext:
+				self.fields['question-%s-freetext' % question.id] = forms.CharField(max_length=30000, required=False,
+				label="Explanation" if question.choices.count() else question.question,
+				widget=forms.Textarea(attrs={'rows': 4, 'class': 'form-control'}))
+
+				self.fields['question-%s-freetext' % question.id].question_id = question.id
+				print(self.fields['question-%s-freetext' % question.id])
 		
-		self.fields['comment'] = forms.CharField(max_length=30000, required=False,
-				widget=forms.Textarea(attrs={'rows': 11, 'class': 'form-control'}))
+		# self.fields['comment'] = forms.CharField(max_length=30000, required=False,
+				# widget=forms.Textarea(attrs={'rows': 11, 'class': 'form-control'}))
 				
 		authorized_label = 'I am ' + ' ' + assignment.respondent.title.short
 		authorized_label += ' ' + assignment.respondent.first_name

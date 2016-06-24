@@ -4,9 +4,9 @@ from operator import eq
 from django.db import models
 from localflavor.us.models import USStateField, USPostalCodeField, PhoneNumberField
 from localflavor.us.us_states import USPS_CHOICES
-from django.contrib.auth.models import User
 from django.conf import settings
-from django.template.defaultfilters import slugify
+from django.contrib.auth.models import User
+from django.utils.text import slugify
 from django.template.loader import select_template
 
 from django.db.models.signals import post_delete
@@ -124,9 +124,11 @@ class Question(models.Model):
     explanation = models.TextField(blank=True, help_text='Provide more information about this question.')
     directed_to = models.CharField(max_length=150, blank=True, default="",
                                    help_text='A short description of who this question is going to (e.g., "State Lawmakers")')
-    choices = models.ManyToManyField('Choice')
+    choices = models.ManyToManyField('Choice', blank=True)
     visualize = models.BooleanField(default=True)
     order = models.PositiveSmallIntegerField(default=1)
+
+    freetext = models.BooleanField(default=False)
 
     def __unicode__(self):
         return self.question
@@ -135,25 +137,18 @@ class Question(models.Model):
         ordering = ('order',)
 
 
-class ChoiceDisplay(models.Model):
+class Choice(models.Model):
+    choice = models.CharField(max_length=75, unique=True)
     slug = models.SlugField()
     display = models.TextField(blank=True)
-    no_answer = models.BooleanField(default=False, help_text="bucket represents the 'no answer' option.")
     order = models.PositiveSmallIntegerField(default=1)
 
-    def __unicode__(self):
-        return self.slug
-
-
-class Choice(models.Model):
-    display = models.ForeignKey(ChoiceDisplay)
-    choice = models.CharField(max_length=75, unique=True)
+    def save(self, *args, **kwargs):
+        if(self.slug):
+            super(self, Choice).save(*args, **kwargs)
 
     def __unicode__(self):
         return self.choice
-
-    class Meta:
-        ordering = ('-display__order',)
 
 
 class QuestionGroup(models.Model):
@@ -254,17 +249,17 @@ class Assignment(models.Model):
     def save(self, *args, **kwargs):
         super(Assignment, self).save(*args, **kwargs)
 
-        complete_check = (list(self.questions.questions.all().order_by('id').values_list('id', flat=True))
-                          == list(
-            self.answers.all().order_by('question__question__id').values_list('question__question__id', flat=True))
-                          and Comment.objects.filter(assignment=self).exists())
+        # complete_check = (list(self.questions.questions.all().order_by('id').values_list('id', flat=True))
+        #                   == list(
+        #     self.answers.all().order_by('question__question__id').values_list('question__question__id', flat=True))
+        #                   and Comment.objects.filter(assignment=self).exists())
 
-        if (complete_check and not self.survey_complete):
-            self.survey_complete = True
-            self.save()
-        elif (not complete_check and self.survey_complete):
-            self.survey_complete = False
-            self.save()
+        # if (complete_check and not self.survey_complete):
+        #     self.survey_complete = True
+        #     self.save()
+        # elif (not complete_check and self.survey_complete):
+        #     self.survey_complete = False
+        #     self.save()
 
         not_slugified = str(self.id) + ' ' + self.respondent.first_name + ' '
         not_slugified += self.respondent.last_name
@@ -283,7 +278,8 @@ class Assignment(models.Model):
 class Answer(models.Model):
     assignment = models.ForeignKey('Assignment', related_name='answers')
     question = models.ForeignKey('QuestionGroupOrder')
-    answer = models.ForeignKey('Choice')
+    answer = models.ForeignKey('Choice', blank=True, null=True)
+    freetext = models.TextField(blank=True)
 
     class Meta:
         ordering = ['assignment', 'question__order']
@@ -336,21 +332,21 @@ class FormRequest(models.Model):
         return unicode(self.assignment) + ' - ' + self.request_time.ctime()
 
 
-@receiver(post_delete, sender=Answer, dispatch_uid='answer_delete')
-def update_survey_complete_after_answer_delete(sender, **kwargs):
-    if 'instance' in kwargs:
-        try:
-            assignment = kwargs['instance'].assignment
-            assignment.save()
-        except Assignment.DoesNotExist:
-            pass
+# @receiver(post_delete, sender=Answer, dispatch_uid='answer_delete')
+# def update_survey_complete_after_answer_delete(sender, **kwargs):
+#     if 'instance' in kwargs:
+#         try:
+#             assignment = kwargs['instance'].assignment
+#             assignment.save()
+#         except Assignment.DoesNotExist:
+#             pass
 
 
-@receiver(post_delete, sender=Comment, dispatch_uid='comment_delete')
-def update_survey_complete_after_comment_delete(sender, **kwargs):
-    if 'instance' in kwargs:
-        try:
-            assignment = kwargs['instance'].assignment
-            assignment.save()
-        except Assignment.DoesNotExist:
-            pass
+# @receiver(post_delete, sender=Comment, dispatch_uid='comment_delete')
+# def update_survey_complete_after_comment_delete(sender, **kwargs):
+#     if 'instance' in kwargs:
+#         try:
+#             assignment = kwargs['instance'].assignment
+#             assignment.save()
+#         except Assignment.DoesNotExist:
+#             pass
