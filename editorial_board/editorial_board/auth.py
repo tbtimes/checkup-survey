@@ -1,4 +1,5 @@
 PASS = "development"
 USER = "newproducts"
-HOST = "10.43.141.18"
+HOST = ""
 PORT = "5432"
+
