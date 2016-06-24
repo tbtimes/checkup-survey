@@ -1,4 +1,4 @@
-PASS = "Rs42dtryn@"
-USER = "emurray"
-HOST = ""
+PASS = "development"
+USER = "newproducts"
+HOST = "10.43.141.18"
 PORT = "5432"

@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand, CommandError
 from django.contrib.auth.models import User
-from checkup.models import Reporter, Assignment, Survey, Group, Respondent
+from checkup.models import Reporter, Assignment, Survey, Group, Respondent, QuestionGroup
 import csv, os
 
 class Command(BaseCommand):
@@ -48,7 +48,32 @@ class Command(BaseCommand):
         with open(path, 'rU') as importFile:
             reader = csv.DictReader(importFile)
             for row in reader:
-                group = self.getGroup(row['Office'])
-                respondent = Respondent(title=None, group=group, party=row['Party'], district=row['District'],
-                                        gender=None, first_name=row['First'], last_name=row['Last'], email=row['Email'])
-                print(respondent)
+                if row['Type of Race'] != '':
+                    # Get respondent and group
+                    group = self.getGroup(row['Office'])
+                    respondent = Respondent(title=None, group=group, party=row['Party'], district=row['District'],
+                                            gender=None, first_name=row['First'], last_name=row['Last'], email=row['Email'])
+                    respondent.save()
+
+                    # get questions
+                    qgroup = ''
+                    if row['Type of Race'] == 'Federal':
+                        qgroup = 'congress'
+                    elif row['Type of Race'] == 'State':
+                        qgroup = 'florida legislature'
+                    else:
+                        if row['Office'] == 'School Board':
+                            qgroup = 'school board'
+                        else:
+                            qgroup = 'personal'
+
+                    # assign reporter
+                    if row['County'] == 'Hillsborough':
+                        reporter = john
+                    else:
+                        reporter = sharon
+
+                    # assign survey here
+                    survey = ''
+
+                    assignment = Assignment(survey=survey, respondent=respondent, reporter=reporter, questions=qgroup)
