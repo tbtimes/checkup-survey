@@ -76,4 +76,5 @@ class Command(BaseCommand):
                     # assign survey here
                     survey = ''
 
-                    assignment = Assignment(survey=survey, respondent=respondent, reporter=reporter, questions=qgroup)
+                    # assignment = Assignment(survey=survey, respondent=respondent, reporter=reporter, questions=qgroup)
+                    # assignment.save()
