@@ -139,13 +139,9 @@ class Question(models.Model):
 
 class Choice(models.Model):
     choice = models.CharField(max_length=75, unique=True)
-    slug = models.SlugField()
+    slug = models.SlugField(blank=True)
     display = models.TextField(blank=True)
     order = models.PositiveSmallIntegerField(default=1)
-
-    def save(self, *args, **kwargs):
-        if(self.slug):
-            super(self, Choice).save(*args, **kwargs)
 
     def __unicode__(self):
         return self.choice
