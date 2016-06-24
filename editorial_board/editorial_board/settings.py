@@ -106,13 +106,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/survey/static/'
 
 # Local settings for checkup application.
 import os
 
 ROOT_PATH = os.path.dirname(__file__)
-STATIC_ROOT = os.path.join(ROOT_PATH, 'static')
+STATIC_ROOT = os.path.join(ROOT_PATH, 'static/survey/static')
 BUILD_DIR = os.path.join(ROOT_PATH, 'build')
 
 DATABASES = {

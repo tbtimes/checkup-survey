@@ -74,7 +74,7 @@ class Command(BaseCommand):
                         reporter = sharon
 
                     # assign survey here
-                    survey = ''
+                    survey = Survey.objects.get_or_create(name="Editorial Board Candidate Survey 2016", home_slug="edi2016")[0]
 
-                    # assignment = Assignment(survey=survey, respondent=respondent, reporter=reporter, questions=qgroup)
-                    # assignment.save()
+                    assignment = Assignment(survey=survey, respondent=respondent, reporter=reporter, questions=QuestionGroup.objects.get(name=qgroup))
+                    assignment.save()
