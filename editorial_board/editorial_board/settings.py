@@ -117,10 +117,12 @@ BUILD_DIR = os.path.join(ROOT_PATH, 'build')
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
     # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'editorial',  # Or path to database file if using sqlite3.
+    #     'NAME': 'editorial',  # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': '/Users/emurray/PycharmProjects/checkup-survey/editorial_board/editorial_board/data.sql',
         'USER': auth.USER,
         'PASSWORD': auth.PASS,
         'HOST': auth.HOST,  # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
@@ -130,8 +132,8 @@ DATABASES = {
 
 # CheckUp required apps
 INSTALLED_APPS += (
-    'grappelli.dashboard',
-    'grappelli',
+    # 'grappelli.dashboard',
+    # 'grappelli',
     # 'django.contrib.admin',
     'django.contrib.admindocs',
     'django.contrib.humanize',

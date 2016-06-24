@@ -23,7 +23,7 @@ except NameError:
 
 class Reporter(models.Model):
     user = models.OneToOneField(User, primary_key=True)
-    title = models.ForeignKey('Title', help_text='Optional title to appear before reporter\'s name.', blank=True)
+    title = models.ForeignKey('Title', help_text='Optional title to appear before reporter\'s name.', blank=True, null=True)
     phone = PhoneNumberField(blank=True)
 
     def __unicode__(self):
@@ -81,14 +81,14 @@ class Respondent(models.Model):
     )
     group = models.ForeignKey('Group',
                               help_text='A group of respondents that may be asked the same questions, i.e. Nassau County Legislator')
-    title = models.ForeignKey('Title', help_text='Displayed next to a person\'s name')
+    title = models.ForeignKey('Title', help_text='Displayed next to a person\'s name', null=True, blank=True)
     party = models.CharField(max_length=3, choices=PARTIES,
                              help_text='Optional, the party of the person. This is used in legislative suffixes (R-Hempstead) ONLY when a district is also specified below.',
                              blank=True)
     district = models.CharField(max_length=75,
                                 help_text='Optional legislative district. If both party and district are specified, a suffix (R-Hempstead) may appear after the legislator\'s name',
                                 blank=True)
-    gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
+    gender = models.CharField(max_length=1, choices=GENDER_CHOICES, blank=True, null=True)
     first_name = models.CharField(max_length=75)
     last_name = models.CharField(max_length=75)
     website = models.URLField(max_length=254, blank=True)
@@ -110,7 +110,7 @@ class Respondent(models.Model):
     sheet_id = models.IntegerField(default=0)
 
     def __unicode__(self):
-        return self.title.short + ' ' + self.first_name + ' ' + self.last_name
+        return self.first_name + ' ' + self.last_name
 
     def full_name(self):
         return self.first_name + ' ' + self.last_name
