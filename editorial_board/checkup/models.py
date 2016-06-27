@@ -40,6 +40,7 @@ class Survey(models.Model):
     display_chatter = models.TextField(help_text='Optional, readers read this before reading survey responses.',
                                        blank=True)
     display_byline = models.TextField(blank=True)
+    allow_save = models.BooleanField(default=True)
 
     def __unicode__(self):
         return self.name
