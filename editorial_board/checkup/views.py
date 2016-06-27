@@ -57,7 +57,7 @@ def surveyform(request, assignment_id):
     initial_data = {}
     for answer in assignment.answers.all():
         question = answer.question.question
-        if question.choices.count():
+        if question.choices.count() and answer.answer:
             initial_data['question-%s' % question.id] = answer.answer.id
         if answer.question.question.freetext:
             initial_data['question-%s-freetext' % question.id] = answer.freetext
