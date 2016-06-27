@@ -2,93 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="306d72c6-e672-48e1-9688-f717f15702dd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/editorial_board/checkup/migrations/__init__.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/checkup/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/checkup/migrations/0002_auto__add_field_question_order.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/__init__.py" afterPath="$PROJECT_DIR$/editorial_board/checkup/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/admin.py" afterPath="$PROJECT_DIR$/editorial_board/checkup/admin.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/dashboard.py" afterPath="$PROJECT_DIR$/editorial_board/checkup/dashboard.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/forms.py" afterPath="$PROJECT_DIR$/editorial_board/checkup/forms.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/migrations/__init__.py" afterPath="$PROJECT_DIR$/editorial_board/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/models.py" afterPath="$PROJECT_DIR$/editorial_board/checkup/models.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/scripts/checkup_fake_data.py" afterPath="$PROJECT_DIR$/editorial_board/checkup/scripts/checkup_fake_data.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/scripts/load_short_urls.py" afterPath="$PROJECT_DIR$/editorial_board/checkup/scripts/load_short_urls.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/scripts/respondent_import.py" afterPath="$PROJECT_DIR$/editorial_board/checkup/scripts/respondent_import.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/css/animate+animo.css" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/css/animate+animo.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/css/bootstrap.css" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/css/bootstrap.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/css/bootstrap.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/css/casesmq.css" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/css/casesmq.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/css/checkup.css" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/css/checkup.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/css/isotope.css" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/css/isotope.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/css/overviewmq.css" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/css/overviewmq.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/approve.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/approve.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/comment.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/comment.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/commented.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/commented.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/contact.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/contact.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/disapprove.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/disapprove.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/dollar.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/dollar.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/email.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/email.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/greenarrow.png" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/greenarrow.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/greyarrow.png" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/greyarrow.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/link.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/link.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/no-comment.png" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/no-comment.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/no-response.png" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/no-response.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/no.png" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/no.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/office.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/office.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/phone.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/phone.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/redarrow.png" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/redarrow.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/shield-iphone.png" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/shield-iphone.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/shield.png" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/shield.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/sources.txt" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/sources.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/twitter.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/twitter.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/unknown.svg" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/unknown.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/img/yes.png" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/img/yes.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/animo-shim.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/animo-shim.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/animo.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/animo.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/checkup.fancyload.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/checkup.fancyload.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/checkup.profile.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/checkup.profile.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/checkup.survey.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/checkup.survey.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/history.adapter.jquery.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/history.adapter.jquery.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/is.mobile.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/is.mobile.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/jquery.checkup.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/jquery.checkup.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/jquery.history.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/jquery.history.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/jquery.isotope.min.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/jquery.isotope.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/jquery.localscroll-1.2.7-min.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/jquery.localscroll-1.2.7-min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/jquery.scrollTo-1.4.3.1-min.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/jquery.scrollTo-1.4.3.1-min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/jquery.touchSwipe.min.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/jquery.touchSwipe.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/modernizr.custom.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/modernizr.custom.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/readmore.min.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/readmore.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/respond.min.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/respond.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/underscore-min.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/underscore-min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/underscore-min.map" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/underscore-min.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/static/checkup/js/waypoints.min.js" afterPath="$PROJECT_DIR$/editorial_board/checkup/static/checkup/js/waypoints.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/back-button.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/back-button.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/base.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/base.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/byline.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/byline.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/comments.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/comments.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/mugshot.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/mugshot.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/next-arrow-profile.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/next-arrow-profile.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/next-arrow.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/next-arrow.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/prev-arrow-profile.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/prev-arrow-profile.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/prev-arrow.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/prev-arrow.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/profile.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/profile.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/scrap.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/scrap.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/survey-complete-text.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/survey-complete-text.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/survey-incomplete-text.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/survey-incomplete-text.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/survey.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/survey.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/surveyform.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/surveyform.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/swipes.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/swipes.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/thanks.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/thanks.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/templates/checkup/tweetme.html" afterPath="$PROJECT_DIR$/editorial_board/checkup/templates/checkup/tweetme.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/tests.py" afterPath="$PROJECT_DIR$/editorial_board/checkup/tests.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/urls.py" afterPath="$PROJECT_DIR$/editorial_board/checkup/urls.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checkup/views.py" afterPath="$PROJECT_DIR$/editorial_board/checkup/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fabfile/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fabfile/local.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fabfile/server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="newstools-checkup.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -110,23 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/editorial_board/manage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#22#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/editorial_board/editorial_board/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2261">
-              <caret line="134" column="29" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
+            <state relative-caret-position="279">
+              <caret line="123" column="49" selection-start-line="123" selection-start-column="49" selection-end-line="123" selection-end-column="49" />
               <folding>
                 <element signature="e#316#325#0" expanded="true" />
               </folding>
@@ -134,24 +39,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/editorial_board/checkup/forms.py">
+      <file leaf-file-name="auth.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editorial_board/editorial_board/auth.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/editorial_board/checkup/dashboard.py">
+      <file leaf-file-name="loadcands.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editorial_board/checkup/management/commands/loadcands.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-              <folding />
+            <state relative-caret-position="304">
+              <caret line="44" column="105" selection-start-line="44" selection-start-column="105" selection-end-line="44" selection-end-column="105" />
+              <folding>
+                <element signature="e#0#65#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,8 +64,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/editorial_board/checkup/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="26" column="38" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="38" />
+            <state relative-caret-position="289">
+              <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -168,55 +73,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/editorial_board/checkup/templates/checkup/base.html">
+      <file leaf-file-name="local.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fabfile/local.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="survey.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/editorial_board/checkup/templates/checkup/survey.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="102">
+              <caret line="6" column="50" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="50" />
               <folding>
-                <marker date="1459969937000" expanded="true" signature="2404:2902" placeholder="..." />
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="surveyform.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/editorial_board/checkup/templates/checkup/surveyform.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/editorial_board/checkup/models.py">
+      <file leaf-file-name="server.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fabfile/server.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="24" column="36" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="36" />
+              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/editorial_board/checkup/migrations/__init__.py">
+        <entry file="file://$PROJECT_DIR$/fabfile/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editorial_board/checkup/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-43">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -241,9 +146,15 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/editorialPrj/editorialPrj/local_settings.py" />
         <option value="$PROJECT_DIR$/editorialPrj/editorialPrj/settings.py" />
-        <option value="$PROJECT_DIR$/editorial_board/editorial_board/auth.py" />
-        <option value="$PROJECT_DIR$/editorial_board/editorial_board/settings.py" />
         <option value="$PROJECT_DIR$/editorial_board/checkup/models.py" />
+        <option value="$PROJECT_DIR$/editorial_board/editorial_board/settings.py" />
+        <option value="$PROJECT_DIR$/editorial_board/editorial_board/auth.py" />
+        <option value="$PROJECT_DIR$/editorial_board/checkup/management/commands/loadcands.py" />
+        <option value="$PROJECT_DIR$/editorial_board/checkup/views.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/fabfile/__init__.py" />
+        <option value="$PROJECT_DIR$/fabfile/local.py" />
+        <option value="$PROJECT_DIR$/fabfile/server.py" />
       </list>
     </option>
   </component>
@@ -288,27 +199,41 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="newstools-checkup" />
+              <option name="myItemId" value="checkup-survey" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="newstools-checkup" />
+              <option name="myItemId" value="checkup-survey" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="newstools-checkup" />
+              <option name="myItemId" value="checkup-survey" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="newstools-checkup" />
+              <option name="myItemId" value="checkup-survey" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="newstools-checkup" />
+              <option name="myItemId" value="checkup-survey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabfile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="checkup-survey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="checkup-survey" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -318,11 +243,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="newstools-checkup" />
+              <option name="myItemId" value="checkup-survey" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="newstools-checkup" />
+              <option name="myItemId" value="checkup-survey" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -330,7 +255,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="checkup" />
+              <option name="myItemId" value="editorial_board" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="checkup-survey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="checkup-survey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -346,13 +285,14 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/editorial_board" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/editorial_board/editorial_board" />
       <recent name="$PROJECT_DIR$/editorial_board" />
       <recent name="$PROJECT_DIR$/editorialPrj/editorialPrj" />
       <recent name="$PROJECT_DIR$/editorialPrj" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/editorial_board" />
     </key>
   </component>
   <component name="RunManager">
@@ -582,14 +522,14 @@
     <frame x="0" y="23" width="1920" height="1119" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.115548454" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11767838" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5021299" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15257531" sideWeight="0.4978701" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27210885" sideWeight="0.4978701" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -610,44 +550,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/editorial_board/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editorial_board/editorial_board/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2261">
-          <caret line="134" column="29" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
-          <folding>
-            <element signature="e#316#325#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/dashboard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/editorial_board/checkup/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -671,7 +573,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1459969937000" expanded="true" signature="2404:2902" placeholder="..." />
+            <marker date="1466782943000" expanded="true" signature="2404:2902" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -698,7 +600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -773,20 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/editorial_board/editorial_board/auth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/editorial_board/django-dbtemplates-master/setup.py" />
     <entry file="file://$PROJECT_DIR$/local_settings.example">
       <provider selected="true" editor-type-id="text-editor">
@@ -799,9 +686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -809,7 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -822,41 +705,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/editorial_board/checkup/migrations/0002_auto__add_field_question_order.py" />
     <entry file="file://$PROJECT_DIR$/editorial_board/editorial/migrations/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/editorial_board/editorial_board/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2261">
-          <caret line="134" column="29" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
-          <folding>
-            <element signature="e#316#325#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/editorial_board/checkup/dashboard.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -868,30 +721,136 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/templates/checkup/survey.html">
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/management/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1459969937000" expanded="true" signature="2404:2902" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/editorial_board/checkup/templates/checkup/surveyform.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/management/commands/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/editorial_board/checkup/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="24" column="36" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="36" />
+        <state relative-caret-position="-1794">
+          <caret line="158" column="24" selection-start-line="158" selection-start-column="24" selection-end-line="158" selection-end-column="24" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/templates/checkup/survey.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="69" column="253" selection-start-line="69" selection-start-column="247" selection-end-line="69" selection-end-column="253" />
+          <folding>
+            <marker date="1466782943000" expanded="true" signature="2404:2902" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-43">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/management/commands/loadcands.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="44" column="105" selection-start-line="44" selection-start-column="105" selection-end-line="44" selection-end-column="105" />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/editorial_board/auth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/editorial_board/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="123" column="49" selection-start-line="123" selection-start-column="49" selection-end-line="123" selection-end-column="49" />
+          <folding>
+            <element signature="e#316#325#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fabfile/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/2016-06-27.dbdump">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editorial_board/checkup/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fabfile/local.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="50" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fabfile/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
