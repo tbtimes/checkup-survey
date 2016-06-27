@@ -62,10 +62,11 @@ def surveyform(request, assignment_id):
         if answer.question.question.freetext:
             initial_data['question-%s-freetext' % question.id] = answer.freetext
     
+    save_msg = False
     if request.method == 'POST':
         form = SurveyForm(request.POST, assignment=assignment, initial=initial_data)
         valid = form.is_valid()
-        
+
         for key, value in form.cleaned_data.items():
             if 'question' in key:
                 question = Question.objects.get(pk=int(key.split('-')[1]))
@@ -118,13 +119,15 @@ def surveyform(request, assignment_id):
                 form = SurveyForm(initial_data, assignment=assignment)
         else:
             assignment.save()
+            save_msg = True
     else:
         form = SurveyForm(assignment=assignment, initial=initial_data)
 
     context = {
         'form' : form,
         'assignment' : assignment,
-        'base_template': base_template
+        'base_template': base_template,
+        'save_msg': save_msg
         }
     return render(request, 'checkup/surveyform.html', context)
 
