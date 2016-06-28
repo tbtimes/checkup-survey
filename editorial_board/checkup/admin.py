@@ -3,6 +3,7 @@ from django.contrib.sites.models import Site
 from django.core.urlresolvers import reverse
 from django.utils.html import mark_safe
 from django.template import Template, Context
+from django.utils.encoding import smart_text
 
 from checkup.models import Reporter, Survey, Group, Title, Respondent
 from checkup.models import Question, Choice, QuestionGroup, QuestionGroupOrder
@@ -36,21 +37,20 @@ class AssignmentAdmin(admin.ModelAdmin):
 		'visits', 'phone', 'email',)
 	list_editable = ('contacted', 'receipt_confirmed', 
 		'confirmation_sent', 'reporter')
-
-	answersTemplate = Template(
-"""{% for a in answers %}
-{{ forloop.counter }}. {{a.question.question.question}}
-{% if a.choice %} {{a.choice}} &mdash; {% endif %}{{ a.freetext }}
-{% endfor %}
-"""
-	)
+	templateString = u"{% for a in answers %}\n{{ forloop.counter }}. {{a.question.question.question}}\n{% if a.choice %} {{a.choice}} &mdash; {% endif %}{{ a.freetext }}\n{% endfor %}"
+	answersTemplate = Template(templateString)
 
 	class Media:
 		js = ('checkup/js/download_answers.js',)
 
 	def download_answers(self, instance):
-		# print(self.answersTemplate.render(Context({"answers": instance.answers.all()})))
-		return mark_safe('<a href="#">Download</a><div class="answerset" style="display: none;">{}</div>'.format(self.answersTemplate.render(Context({"answers": instance.answers.all()}))))
+		context = { "answers": [] }
+		for answer in instance.answers.all():
+			obj = { "freetext": answer.freetext }
+			if answer.answer_id:
+				obj["choice"] = Choice.objects.get(id=answer.answer_id).choice
+			context["answers"].append(obj)
+		return mark_safe(u'<a href="#">Download</a><div class="answerset" style="display: none;">{}</div>'.format(self.answersTemplate.render(Context(context))))
 
 	def form_url(self, instance):
 		form_url = None
