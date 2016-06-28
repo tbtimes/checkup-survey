@@ -117,9 +117,9 @@ BUILD_DIR = os.path.join(ROOT_PATH, 'build')
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
     # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '/Users/emurray/PycharmProjects/checkup-survey/editorial_board/editorial_board/data.sql',  # Or path to database file if using sqlite3.
+        'NAME': 'survey',  # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': '/Users/emurray/PycharmProjects/checkup-survey/editorial_board/editorial_board/data.sql',

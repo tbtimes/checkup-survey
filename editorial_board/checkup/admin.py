@@ -37,7 +37,7 @@ class AssignmentAdmin(admin.ModelAdmin):
 		'visits', 'phone', 'email',)
 	list_editable = ('contacted', 'receipt_confirmed', 
 		'confirmation_sent', 'reporter')
-	templateString = u"{% for a in answers %}\n{{ forloop.counter }}. {{a.question.question.question}}\n{% if a.choice %} {{a.choice}} &mdash; {% endif %}{{ a.freetext }}\n{% endfor %}"
+	templateString = u"{% for a in answers %}\n{{ forloop.counter }}. {{a.question}}\n{% if a.choice %} {{a.choice}} &mdash; {% endif %}{{ a.freetext }}\n{% endfor %}"
 	answersTemplate = Template(templateString)
 
 	class Media:
