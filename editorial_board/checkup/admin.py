@@ -1,6 +1,8 @@
 from django.contrib import admin
 from django.contrib.sites.models import Site
 from django.core.urlresolvers import reverse
+from django.utils.html import mark_safe
+from django.template import Template, Context
 
 from checkup.models import Reporter, Survey, Group, Title, Respondent
 from checkup.models import Question, Choice, QuestionGroup, QuestionGroupOrder
@@ -24,15 +26,31 @@ class QuestionAdmin(admin.ModelAdmin):
 
 class AssignmentAdmin(admin.ModelAdmin):
 	# change_list_template = 'admin/change_list_filter_sidebar.html'
+
 	change_list_filter_template = 'admin/filter_listing.html'
-	list_display = ('respondent', 'respondent_link', 'phone', 'email', 'contacted', 'visits',
-		'receipt_confirmed', 'survey_complete', 'confirmation_sent', 'reporter', 'form_url',)
+	list_display = ('respondent', 'download_answers', 'respondent_link', 'phone', 'email', 'contacted', 'visits',
+		'receipt_confirmed', 'survey_complete', 'confirmation_sent', 'reporter', 'form_url', )
 	list_filter = ('survey', 'reporter', 'contacted', 'receipt_confirmed', 
 		'survey_complete', 'confirmation_sent')
 	readonly_fields = ('form_url', 'respondent_link', 'display_url', 'survey_complete', 
 		'visits', 'phone', 'email',)
 	list_editable = ('contacted', 'receipt_confirmed', 
 		'confirmation_sent', 'reporter')
+
+	answersTemplate = Template(
+"""{% for a in answers %}
+{{ forloop.counter }}. {{a.question.question.question}}
+{% if a.choice %} {{a.choice}} &mdash; {% endif %}{{ a.freetext }}
+{% endfor %}
+"""
+	)
+
+	class Media:
+		js = ('checkup/js/download_answers.js',)
+
+	def download_answers(self, instance):
+		# print(self.answersTemplate.render(Context({"answers": instance.answers.all()})))
+		return mark_safe('<a href="#">Download</a><div class="answerset" style="display: none;">{}</div>'.format(self.answersTemplate.render(Context({"answers": instance.answers.all()}))))
 
 	def form_url(self, instance):
 		form_url = None
