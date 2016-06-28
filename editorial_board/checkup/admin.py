@@ -46,7 +46,7 @@ class AssignmentAdmin(admin.ModelAdmin):
 	def download_answers(self, instance):
 		context = { "answers": [] }
 		for answer in instance.answers.all():
-			obj = { "freetext": answer.freetext }
+			obj = { "freetext": answer.freetext, "question": answer.question.question.question}
 			if answer.answer_id:
 				obj["choice"] = Choice.objects.get(id=answer.answer_id).choice
 			context["answers"].append(obj)
