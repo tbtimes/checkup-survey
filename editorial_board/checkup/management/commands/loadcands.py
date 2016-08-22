@@ -61,11 +61,17 @@ class Command(BaseCommand):
                         qgroup = 'congress'
                     elif row['Type of Race'] == 'State':
                         qgroup = 'florida legislature'
+                    elif row['Type of Race'] == 'Local' and row['Office'] == 'Commission':
+                        if row['County'] == "Pinellas":
+                            qgroup = "pinellas commish"
+                        if row['County'] == "Hillsborough":
+                            qgroup = "hillsborough commish"
                     else:
                         if row['Office'] == 'School Board':
                             qgroup = 'school board'
-                        else:
-                            qgroup = 'personal'
+                    
+                    if not qgroup:
+                        qgroup = 'personal'
 
                     # assign reporter
                     if row['County'] == 'Hillsborough':
@@ -74,7 +80,7 @@ class Command(BaseCommand):
                         reporter = sharon
 
                     # assign survey here
-                    survey = Survey.objects.get_or_create(name="Editorial Board Candidate Survey 2016", home_slug="edi2016")[0]
+                    survey = Survey.objects.get_or_create(name="Editorial Board Candidate Survey 2016 / General", home_slug="edi2016-gen")[0]
 
                     assignment = Assignment(survey=survey, respondent=respondent, reporter=reporter, questions=QuestionGroup.objects.get(name=qgroup))
                     assignment.save()
